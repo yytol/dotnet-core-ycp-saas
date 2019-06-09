@@ -1,0 +1,6 @@
+<template v-if="row.Image===''">
+    <img v-bind:src="Images.None" />
+</template>
+<template v-else>
+    <img v-bind:src="row.Background" />
+</template>

@@ -1,0 +1,28 @@
+﻿{
+
+  //应用名称
+  "Name": "ManageAosAppsEdit",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/AosApps/Edit/page.js",
+
+  //入口网页文件
+  "Page": "/AosApps/Edit",
+
+  //样式文件
+  "Style": "/res/AosApps/Edit/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Save": "/res/AosApps/Edit/images/save.png",
+    "Cancel": "/res/AosApps/Edit/images/cancel.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Dialog"
+
+}

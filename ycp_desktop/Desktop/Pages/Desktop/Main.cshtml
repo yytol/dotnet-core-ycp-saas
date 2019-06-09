@@ -1,0 +1,44 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Main">
+    <div class="desktop-main-box">
+        <div dpz-id="Header" class="desktop-main-header">
+            <div class="desktop-main-header-rect">
+                <div dpz-id="Logo" class="desktop-main-header-logo"><img src="{{Images.logo}}" /></div>
+                <div dpz-id="User" class="desktop-main-header-info">{{User.Nick}}({{User.Name}})</div>
+                <div dpz-id="Exit" class="desktop-main-header-button">
+                    <a dpz-id="Exit_Link" href="javascript:;"><img src="{{Images.exit}}" /></a>
+                </div>
+                <div dpz-id="Help" class="desktop-main-header-button">
+                    <a dpz-id="Help_Link" href="javascript:;"><img src="{{Images.help}}" /></a>
+                </div>
+                <div dpz-id="Setting" class="desktop-main-header-button">
+                    <a dpz-id="Setting_Link" href="javascript:;">设置选项</a>
+                </div>
+                <div dpz-id="Message" class="desktop-main-header-button">
+                    <a dpz-id="Message_Link" href="javascript:;">消息中心</a>
+                </div>
+                <div dpz-id="Overview" class="desktop-main-header-button">
+                    <a dpz-id="Overview_Link" href="javascript:;">概览</a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div dpz-id="Menu" class="desktop-main-menu">
+            <div class="desktop-main-menu-line desktop-main-menu-title">
+                <a dpz-id="Menu_Header" href="javascript:;"><i><img src="{{Images.menu.list}}" /></i><s>产品与功能</s></a>
+            </div>
+            <div dpz-id="MenuList" class="desktop-main-menu-box">
+                <dl>
+                    <dt style="clear:both;padding:0px;margin:0px;height:10px;"></dt>
+                </dl>
+            </div>
+        </div>
+        <div dpz-id="Body" class="desktop-main-body"></div>
+    </div>
+</dpzp>
+

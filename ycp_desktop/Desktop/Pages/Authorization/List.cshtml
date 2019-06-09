@@ -1,0 +1,31 @@
+﻿@page
+@{ ViewData["Title"] = "Index";
+                Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Authorization_List">
+    <div class="dig-body">
+        <div class="dig-list">
+            <div class="dig-list-line-header">
+                <div class="dig-list-name">账套名称</div>
+                <div class="dig-list-sign">账套标识</div>
+                <div class="dig-list-act">激活状态</div>
+                <div class="dig-list-opreate">操作项</div>
+                <div style="clear: both;"></div>
+            </div>
+            <block type="list" bind="{list}">
+                <div class="dig-list-line">
+                    <div class="dig-list-name">{Name}</div>
+                    <div class="dig-list-sign">{DBSign}</div>
+                    <div class="dig-list-act"><a href="javascript:;" bind-click="onAuthChange">{InfoStatus}</a></div>
+                    <div class="dig-list-opreate" style="display:{DisplayCode};">-</div>
+                    <div class="dig-list-opreate" style="display:{DisplayOpreate};">删除</div>
+                    <div style="clear: both;"></div>
+                    <div class="dig-list-exp" style="display:{DisplayCode};">序列号：{Code}</div>
+                    <div class="dig-list-exp" style="display:{DisplayCode};">密钥：{SecurityKey}</div>
+                </div>
+            </block>
+        </div>
+    </div>
+</dpzp>
+

@@ -1,0 +1,31 @@
+﻿{
+
+  //应用名称
+  "Name": "DesktopHelpList",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/Help/List/page.js",
+
+  //入口网页文件
+  "Page": "/Help/List",
+
+  //样式文件
+  "Style": "/res/Help/List/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Add": "/res/Help/List/images/add.png",
+    "Edit": "/res/Help/List/images/edit.png",
+    "Delete": "/res/Help/List/images/delete.png",
+    "Refresh": "/res/Help/List/images/refresh-b.png",
+    "Detect": "/res/Help/List/images/detect.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

@@ -1,0 +1,38 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Setting_Pwd">
+    <div class="pg-nav"><div class="pg-nav-box"><div class="pg-nav-title">{{Title}}</div></div></div>
+    <div class="pg-form">
+        <table>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>云桌面名称</s></td>
+                <td>{{info.title}}({{info.name}})</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>云桌面版本</s></td>
+                <td>{{version}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>更新说明</s></td>
+                <td>
+                    <div class="pg-history">
+                        <dl>
+                            <template v-for="history in info.builds" v-bind:key="history.build">
+                                <dt>Version {{history.version}} build {{history.build}}</dt>
+                                <template v-for="(note,index) in history.notes">
+                                    <dd>{{index+1}}、{{note}}</dd>
+                                </template>
+                                <dd>&nbsp;</dd>
+                            </template>
+                        </dl>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</dpzp>
+

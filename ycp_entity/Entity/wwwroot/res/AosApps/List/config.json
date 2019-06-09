@@ -1,0 +1,33 @@
+﻿{
+
+  //应用名称
+  "Name": "ManageAosAppsList",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/AosApps/List/page.js",
+
+  //入口网页文件
+  "Page": "/AosApps/List",
+
+  //样式文件
+  "Style": "/res/AosApps/List/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Add": "/res/AosApps/List/images/add.png",
+    "Edit": "/res/AosApps/List/images/edit.png",
+    "Delete": "/res/AosApps/List/images/delete.png",
+    "Refresh": "/res/AosApps/List/images/refresh-b.png",
+    "Up": "/res/AosApps/List/images/up.png",
+    "Down": "/res/AosApps/List/images/down.png",
+    "Detect": "/res/AosApps/List/images/detect.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

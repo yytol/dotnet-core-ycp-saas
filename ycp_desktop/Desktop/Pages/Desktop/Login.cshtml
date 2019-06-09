@@ -1,0 +1,29 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Login">
+    <div class="desktop-login-banner">用户登录</div>
+    <div class="desktop-login-line">
+        <div class="desktop-login-user">
+            <input class="KernelLogin-User" type="text" dpz-id="User" placeholder="在此输入用户名" v-bind:value="userName" />
+        </div>
+        <div class="desktop-login-pwd">
+            <input class="KernelLogin-Pwd" type="password" dpz-id="Pwd" placeholder="在此输入密码" v-on:keyup.13="doLogin" />
+        </div>
+        <div class="desktop-login-link">
+            <div class="desktop-login-submit">
+                <a dpz-id="Link" href="javascript:;" v-on:click="doLogin">登录</a>
+            </div>
+        </div>
+        <div class="desktop-login-link">
+            <div class="desktop-login-forget">
+                <a dpz-id="Link" href="javascript:;" v-on:click="doForgetUser">忘记用户名</a>&nbsp;&nbsp;<a dpz-id="Link" href="javascript:;" v-on:click="doForgetPwd">忘记密码</a>
+            </div>
+            <div dpz-id="Notice" class="desktop-login-notice">&nbsp;</div>
+        </div>
+    </div>
+</dpzp>
+

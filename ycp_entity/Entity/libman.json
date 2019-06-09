@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "filesystem",
+  "libraries": [
+    {
+      "library": "https://dev.lywos.com/Jdk/ycp/ycc/1.2.1904.6/ycc.js",
+      "destination": "wwwroot/lib/ycp/ycc/"
+    },
+    {
+      "library": "https://dev.lywos.com/Jdk/dpz/1.3.1904.4/dpz.js",
+      "destination": "wwwroot/lib/dpz/"
+    },
+    {
+      "library": "https://dev.lywos.com/Jdk/ycp/desktops/blue/app/1.1.1904.2/load.js",
+      "destination": "wwwroot/lib/ycp/desktops/blue/app/"
+    },
+    {
+      "library": "https://dev.lywos.com/Jdk/ycp/desktops/blue/desktop/1.0.1904.3/page.js",
+      "destination": "wwwroot/lib/ycp/desktops/blue/desktop/"
+    }
+  ]
+}

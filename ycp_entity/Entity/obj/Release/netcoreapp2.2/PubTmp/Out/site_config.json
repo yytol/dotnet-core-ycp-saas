@@ -1,0 +1,33 @@
+{
+  "Active": { "Code": "" },
+  "Http": {
+    "Enable": "yes",
+    "Port": 8002
+  },
+  "Https": {
+    "Enable": "no",
+    "Pfx": {
+      "Path": "/web/ssl/lywos.com.pfx",
+      "Password": "g8rlr1QC"
+    },
+    "Port": 8402
+  },
+  "Database": {
+    "Type": "MySql",
+    "Address": "127.0.0.1",
+    "Port": 3306,
+    "Name": "Aos_Manage",
+    "User": "root",
+    "Password": "123456"
+  },
+  "Orm": {
+    "XmlUrl": "https://dev.lywos.com/Orm/Xml",
+    "CoreUrl": "http://${IP}",
+    "ManageUrl": "http://${IP}:8002"
+  },
+  "Redis": {
+    "Address": "127.0.0.1",
+    "Port": 8379,
+    "Password": "123456"
+  }
+}

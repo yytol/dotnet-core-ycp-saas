@@ -1,0 +1,9 @@
+<template v-if="row.DBStatus===''">
+    <a href="javascript:;" v-on:click="onOneDetect($event,row)">未检测</a>
+</template>
+<template v-else-if="row.DBStatus==='no'">
+    <a href="javascript:;" v-on:click="onOneSetup($event,row)">安装</a>
+</template>
+<template v-else>
+    <span>已安装</span>
+</template>

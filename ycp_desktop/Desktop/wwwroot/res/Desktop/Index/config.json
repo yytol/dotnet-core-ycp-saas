@@ -1,0 +1,27 @@
+﻿{
+
+  //应用名称
+  "Name": "DesktopIndex",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/Desktop/Index/page.js",
+
+  //入口网页文件
+  "Page": "/Desktop/Index",
+
+  //样式文件
+  "Style": "/res/Desktop/Index/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "loginBg": "/res/Desktop/Index/Images/login-bg3.jpg",
+    "loading": "/res/Desktop/Index/Images/loading.gif"
+  },
+
+  //应用显示类型
+  "Type": "Native"
+
+}

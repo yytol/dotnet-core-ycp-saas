@@ -1,0 +1,107 @@
+<table name="AosApps" title="应用信息">
+  <interfaces>
+    <interface name="add" type="add" description="添加">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="edit" type="edit" description="修改">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="view" type="view" description="视图">
+      <line tag-name="div"></line>
+      <title tag-name="i"></title>
+      <content tag-name="s"></content>
+    </interface>
+    <interface name="list" type="list" description="列表">
+      <vue for="(row,index) in list" item="row" key="row.ID"></vue>
+    </interface>
+  </interfaces>
+  <fields>
+    <field name="RowIndex" title="序号">
+      <list type="html" width="60px"></list>
+    </field>
+    <field name="AuthID" title="授权标识">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Name" title="名称">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Text" title="显示文本">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Index" title="排序索引">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Index"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Version" title="版本号">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Path" title="应用地址">
+      <data type="string" size="250" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Limit" title="操作权限限制">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="OnStore" title="是否出现在商城">
+      <data type="int" size="0" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="IsDesktop" title="是否为界面应用">
+      <data type="int" size="0" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Description" title="描述">
+      <data type="text" size="0" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="CatalogID" title="分类标识">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Operate" title="操作">
+      <list type="html" width="150px"></list>
+    </field>
+  </fields>
+</table>

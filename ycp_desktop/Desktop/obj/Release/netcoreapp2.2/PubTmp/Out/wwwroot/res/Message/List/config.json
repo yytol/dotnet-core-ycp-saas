@@ -1,0 +1,31 @@
+﻿{
+
+  //应用名称
+  "Name": "DesktopMessageList",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/Message/List/page.js",
+
+  //入口网页文件
+  "Page": "/Message/List",
+
+  //样式文件
+  "Style": "/res/Message/List/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Add": "/res/Message/List/images/add.png",
+    "Edit": "/res/Message/List/images/edit.png",
+    "Delete": "/res/Message/List/images/delete.png",
+    "Refresh": "/res/Message/List/images/refresh-b.png",
+    "Detect": "/res/Message/List/images/detect.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

@@ -1,0 +1,40 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+
+    string cachePath = System.IO.Directory.GetCurrentDirectory() + site.Config.Orm.CachePath;
+    Dictionary<string, string> cache = new Dictionary<string, string>();
+    dpz.Mvc.UI.XmlUIForVue ui = new dpz.Mvc.UI.XmlUIForVue(site.Config.Database.Aos, cache, site.Config.Orm.XmlUrl, cachePath);
+}
+
+<dpzp sign="Authorization_List">
+    <div class="pg-body">
+        <div class="pg-nav-line">
+            <div class="pg-nav"><s>应用管理</s><i></i><s>所有应用</s><i></i></div>
+        </div>
+        <div class="pg-content">
+            <div class="pg-catalog">
+                <div class="pg-catalog-title">授权列表</div>
+                <div class="pg-catalog-list">
+                    <ul v-for="row in catalogs" v-bind:key="row.Name">
+                        <li>
+                            <template v-if="row.Selected===''">
+                                <a href="javascript:;" v-on:click="onChangeCatalog($event,row)">{{row.Name}}</a>
+                            </template>
+                            <template v-else>
+                                <span>{{row.Name}}</span>
+                            </template>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pg-list-area">
+                <div class="pg-list">
+                    @Html.Raw(ui.GetTableHtml("Aos","AosApps"))
+                </div>
+            </div>
+        </div>
+    </div>
+</dpzp>
+

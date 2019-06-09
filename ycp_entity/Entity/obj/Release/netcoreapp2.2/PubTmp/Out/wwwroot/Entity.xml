@@ -1,0 +1,11 @@
+<entity title="系统管理" description="用于系统根用户的操作应用集合">
+  <apps sign="dpz.Manage">
+    <app sign="AuthManage" title="授权管理" path="/res/AosAuthorize/List/" version="1.0.1904.5" />
+    <app sign="UserManage" title="用户管理" path="/res/AosUsers/List/" version="1.0.1904.3" />
+    <app sign="DesktopManage" title="桌面管理" path="/res/Desktop/List/" version="1.0.1904.2" />
+    <app sign="AosAppsManage" title="应用管理" path="/res/AosApps/List/" version="1.0.1904.2" />
+    <app sign="AosUserAppsManage" title="用户应用关联" path="/res/AosUserApps/List/" version="1.0.1904.1" />
+    <app sign="AosUserAuthorizeManage" title="用户授权关联" path="/res/AosUserAuthorize/List/" version="1.0.1904.1" />
+    <app sign="AosDesktopAuthorizesManage" title="桌面授权兼容性" path="/res/AosDesktopAuthorizes/List/" version="1.0.1904.2" />
+  </apps>
+</entity>

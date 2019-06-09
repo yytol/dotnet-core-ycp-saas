@@ -1,0 +1,208 @@
+<table name="AosAuthorize" title="授权库">
+  <interfaces>
+    <interface name="add" type="add" description="添加">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="edit" type="edit" description="修改">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="view" type="view" description="视图">
+      <line tag-name="div"></line>
+      <title tag-name="i"></title>
+      <content tag-name="s"></content>
+    </interface>
+    <interface name="list" type="list" description="列表">
+      <vue for="(row,index) in list" item="row" key="row.ID"></vue>
+    </interface>
+  </interfaces>
+  <fields>
+    <field name="RowIndex" title="序号">
+      <list type="html" width="60px"></list>
+    </field>
+    <field name="Name" title="名称">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Name"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Code" title="授权码">
+      <data type="string" size="50" float="0"></data>
+      <add type="none" save="row"></add>
+      <edit type="none" save="none"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="SecurityKey" title="安全码">
+      <data type="string" size="150" float="0"></data>
+      <add type="none" save="row"></add>
+      <edit type="none" save="none"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Lv" title="授权等级">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Lv"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DBType" title="数据库类型">
+      <data type="string" size="50" float="0"></data>
+      <add type="select" save="form">
+        <select>
+          <option value="SqlServer">Microsoft_Sql_Server</option>
+          <option value="MySql">MySql/MerriaDB</option>
+          <option value="Access">Microsoft_Access</option>
+          <option value="Sqlite">Sqlite</option>
+        </select>
+      </add>
+      <edit type="select" save="form" bind="Args.DBType">
+        <select>
+          <option value="SqlServer">Microsoft_Sql_Server</option>
+          <option value="MySql">MySql/MerriaDB</option>
+          <option value="Access">Microsoft_Access</option>
+          <option value="Sqlite">Sqlite</option>
+        </select>
+      </edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="DBSign" title="数据库标识">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBSign"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="DBIP" title="地址">
+      <data type="string" size="150" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBIP"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DBPort" title="端口">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBPort"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DBUser" title="用户名">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBUser"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DBPwd" title="密码">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBPwd"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DBPath" title="安装目录">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DBPath"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="InterfaceUrl" title="交互地址">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.InterfaceUrl"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="FileSite" title="文件站点">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.FileSite"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="AppSite" title="应用站点">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.AppSite"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="HomeUrl" title="主页地址">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.HomeUrl"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="SettingUrl" title="设置地址">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.SettingUrl"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="LogoUrl" title="标志地址">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.LogoUrl"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="DesktopID" title="所属桌面">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.DesktopID"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="UrlEntrance" title="地址入口">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.UrlEntrance"></edit>
+      <view type="text"></view>
+      <list type="text" width="200px"></list>
+    </field>
+    <field name="ScriptEntrance" title="脚本入口">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.ScriptEntrance"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="AppConfigEntrance" title="应用配置入口">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.AppConfigEntrance"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="CreateUserID" title="创建用户">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="none" save="none"></edit>
+      <view type="text"></view>
+      <list type="text" width="80px"></list>
+    </field>
+    <field name="DBStatus" title="数据库安装">
+      <list type="html" width="100px"></list>
+    </field>
+    <field name="Status" title="状态">
+      <data type="int" size="0" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Status"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Operate" title="操作">
+      <list type="html" width="150px"></list>
+    </field>
+  </fields>
+</table>

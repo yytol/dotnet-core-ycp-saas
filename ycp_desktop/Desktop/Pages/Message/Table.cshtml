@@ -1,0 +1,49 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Setting_Pwd">
+    <div class="pg-nav"><div class="pg-nav-box"><div class="pg-nav-title">{{Title}}</div></div></div>
+    <div class="pg-list">
+        <table>
+            <tr>
+                <th style="width:60px;min-width:60px;max-width:60px;">序号</th>
+                <th style="width:600px;min-width:600px;max-width:600px;">标题</th>
+                <th style="width:150px;min-width:150px;max-width:150px;">发送时间</th>
+            </tr>
+            <tr v-for="(row,index) in List" v-bind:key="row.ID">
+                <td>{{(Page-1)*PageSize+index+1}}</td>
+                <td>{{row.Title}}</td>
+                <td>{{row.SendTime}}</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="pg-pages">
+                        <dl>
+                            <dd><i>共{{RowCount}}条，每页显示{{PageSize}}条</i></dd>
+                            <dd v-if="Page>2"><a href="javascript:;">首页</a></dd>
+                            <dd v-if="Page>1"><a href="javascript:;">上一页</a></dd>
+                            <dd v-if="Page>1"><a href="javascript:;">{{Page-1}}</a></dd>
+                            <dd v-if="Page>2"><a href="javascript:;">{{Page-2}}</a></dd>
+                            <dd v-if="Page>3"><a href="javascript:;">{{Page-3}}</a></dd>
+                            <dd v-if="Page>4"><a href="javascript:;">{{Page-4}}</a></dd>
+                            <dd v-if="Page>5"><a href="javascript:;">{{Page-5}}</a></dd>
+                            <dd><span>{{Page}}</span></dd>
+                            <dd v-if="Page<PageCount"><a href="javascript:;">{{Page+1}}</a></dd>
+                            <dd v-if="Page<PageCount-1"><a href="javascript:;">{{Page+2}}</a></dd>
+                            <dd v-if="Page<PageCount-2"><a href="javascript:;">{{Page+3}}</a></dd>
+                            <dd v-if="Page<PageCount-3"><a href="javascript:;">{{Page+4}}</a></dd>
+                            <dd v-if="Page<PageCount-4"><a href="javascript:;">{{Page+5}}</a></dd>
+                            <dd v-if="Page<PageCount"><a href="javascript:;">下一页</a></dd>
+                            <dd v-if="Page<PageCount-1"><a href="javascript:;">末页</a></dd>
+                            <dt></dt>
+                        </dl>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</dpzp>
+

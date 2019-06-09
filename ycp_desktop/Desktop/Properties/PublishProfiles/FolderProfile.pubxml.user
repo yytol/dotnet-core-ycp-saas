@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>X:\Publish\Private\P19003_SaaS\Ycp_Desktop</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/js/load.js">
+      <publishTime>05/18/2019 15:03:47</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>02/26/2019 22:59:08</publishTime>
+    </File>
+    <File Include="wwwroot/res/apps.json">
+      <publishTime>04/12/2019 11:07:55</publishTime>
+    </File>
+    <File Include="wwwroot/res/Authorization/List/config.json">
+      <publishTime>04/01/2019 20:48:31</publishTime>
+    </File>
+    <File Include="wwwroot/res/Authorization/List/logo.png">
+      <publishTime>02/26/2019 22:59:33</publishTime>
+    </File>
+    <File Include="wwwroot/res/Authorization/List/page.css">
+      <publishTime>04/10/2019 17:07:25</publishTime>
+    </File>
+    <File Include="wwwroot/res/Authorization/List/page.js">
+      <publishTime>04/27/2019 18:36:34</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/config.json">
+      <publishTime>04/30/2019 11:34:53</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/Images/loading.gif">
+      <publishTime>04/27/2019 17:21:30</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/Images/login-bg.jpg">
+      <publishTime>02/26/2019 22:59:32</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/Images/login-bg2.jpg">
+      <publishTime>02/26/2019 22:59:32</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/Images/login-bg3.jpg">
+      <publishTime>04/30/2019 11:34:02</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/logo.png">
+      <publishTime>02/26/2019 22:59:30</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/page.css">
+      <publishTime>05/23/2019 00:09:57</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Index/page.js">
+      <publishTime>05/23/2019 00:16:07</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/config.json">
+      <publishTime>04/26/2019 18:50:44</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/bg.jpg">
+      <publishTime>02/26/2019 22:59:36</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/bg2.jpg">
+      <publishTime>02/26/2019 22:59:38</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/bg3.jpg">
+      <publishTime>02/26/2019 22:59:38</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/dxm.png">
+      <publishTime>02/26/2019 22:59:39</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/login-bg.jpg">
+      <publishTime>02/26/2019 22:59:35</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/login-bg2.jpg">
+      <publishTime>02/26/2019 22:59:36</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/Images/logo.png">
+      <publishTime>02/26/2019 22:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/logo.png">
+      <publishTime>02/26/2019 22:59:33</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/page.css">
+      <publishTime>05/01/2019 12:51:29</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Login/page.js">
+      <publishTime>05/01/2019 12:50:27</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/config.json">
+      <publishTime>04/30/2019 15:44:17</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/about.png">
+      <publishTime>04/30/2019 15:09:36</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/Applications_48px_1081524_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:42</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/apps.png">
+      <publishTime>04/30/2019 15:43:51</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/Apps_ubiquity_icon_48px_1081629_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:42</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/banner.png">
+      <publishTime>02/26/2019 22:59:43</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/Button_help_icon_128px_1081636_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:43</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/database_128px_26041_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:43</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/email_128px_1186783_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:44</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/exit.png">
+      <publishTime>04/30/2019 15:08:52</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/gear_pignon_settings_128px_5095_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:44</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/ibus_setup_128px_1174889_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:45</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/logo.png">
+      <publishTime>04/30/2019 14:32:35</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/menu_bg.jpg">
+      <publishTime>02/26/2019 22:59:46</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/power_exit_118px_1122609_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:46</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/settings_128px_1217283_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/settings_128px_34135_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/Settings_flat_brown_92px_1117254_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:48</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/Images/web_chrome_app_48px_1174985_easyicon.net.png">
+      <publishTime>02/26/2019 22:59:48</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/logo.png">
+      <publishTime>02/26/2019 22:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/page.css">
+      <publishTime>04/30/2019 16:09:21</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Main/page.js">
+      <publishTime>05/31/2019 22:49:21</publishTime>
+    </File>
+    <File Include="wwwroot/res/Desktop/Note/Images/bg.jpg">
+      <publishTime>02/26/2019 22:59:49</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/config.json">
+      <publishTime>05/01/2019 13:57:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/images/add.png">
+      <publishTime>04/17/2019 11:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/images/delete.png">
+      <publishTime>04/28/2019 21:26:11</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/images/detect.png">
+      <publishTime>04/26/2019 22:27:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/images/edit.png">
+      <publishTime>04/28/2019 21:25:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/images/refresh-b.png">
+      <publishTime>04/26/2019 22:14:55</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/logo/black.png">
+      <publishTime>04/30/2019 16:46:26</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/logo/blue.png">
+      <publishTime>04/29/2019 21:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/page.css">
+      <publishTime>05/01/2019 15:20:28</publishTime>
+    </File>
+    <File Include="wwwroot/res/Help/List/page.js">
+      <publishTime>05/01/2019 15:29:05</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/config.json">
+      <publishTime>05/01/2019 13:57:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/images/add.png">
+      <publishTime>04/17/2019 11:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/images/delete.png">
+      <publishTime>04/28/2019 21:26:11</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/images/detect.png">
+      <publishTime>04/26/2019 22:27:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/images/edit.png">
+      <publishTime>04/28/2019 21:25:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/images/refresh-b.png">
+      <publishTime>04/26/2019 22:14:55</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/logo/black.png">
+      <publishTime>04/30/2019 16:46:26</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/logo/blue.png">
+      <publishTime>04/29/2019 21:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/page.css">
+      <publishTime>05/01/2019 15:20:28</publishTime>
+    </File>
+    <File Include="wwwroot/res/Message/List/page.js">
+      <publishTime>05/02/2019 22:12:39</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/config.json">
+      <publishTime>04/30/2019 16:58:22</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/images/add.png">
+      <publishTime>04/17/2019 11:21:54</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/images/delete.png">
+      <publishTime>04/28/2019 21:26:11</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/images/detect.png">
+      <publishTime>04/26/2019 22:27:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/images/edit.png">
+      <publishTime>04/28/2019 21:25:47</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/images/refresh-b.png">
+      <publishTime>04/26/2019 22:14:55</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/logo/black.png">
+      <publishTime>04/30/2019 16:46:26</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/logo/blue.png">
+      <publishTime>04/29/2019 21:59:40</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/page.css">
+      <publishTime>05/01/2019 16:13:31</publishTime>
+    </File>
+    <File Include="wwwroot/res/Setting/List/page.js">
+      <publishTime>05/13/2019 14:26:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

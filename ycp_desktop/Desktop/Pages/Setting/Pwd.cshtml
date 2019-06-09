@@ -1,0 +1,30 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Setting_Pwd">
+    <div class="pg-nav"><div class="pg-nav-box"><div class="pg-nav-title">{{Name}}</div></div></div>
+    <div class="pg-form">
+        <table>
+            <tr>
+                <td style="width:100px;text-align:right;">原密码</td>
+                <td><input name="OldPwd" type="password" placeholder="输入原密码" v-model="form.OldPwd" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">新密码</td>
+                <td><input name="NewPwd" type="password" placeholder="输入新密码" v-model="form.NewPwd" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">重复密码</td>
+                <td><input name="RePwd" type="password" placeholder="重复输入新密码" v-model="form.RePwd" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><a href="javascript:;" v-on:click="onSubmit">确认修改</a></td>
+            </tr>
+        </table>
+    </div>
+</dpzp>
+

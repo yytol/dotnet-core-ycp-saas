@@ -1,0 +1,29 @@
+﻿{
+
+  //应用名称
+  "Name": "AuthList",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/Authorization/List/page.js",
+
+  //入口网页文件
+  "Page": "/Authorization/List",
+
+  //样式文件
+  "Style": "/res/Authorization/List/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Add": "/res/Authorization/List/images/add.png",
+    "Refresh": "/res/Authorization/List/images/refresh-b.png",
+    "Detect": "/res/Authorization/List/images/detect.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

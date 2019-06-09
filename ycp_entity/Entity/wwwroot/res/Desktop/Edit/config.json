@@ -1,0 +1,28 @@
+﻿{
+
+  //应用名称
+  "Name": "ManageDesktopEdit",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/Desktop/Edit/page.js",
+
+  //入口网页文件
+  "Page": "/Desktop/Edit",
+
+  //样式文件
+  "Style": "/res/Desktop/Edit/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Save": "/res/Desktop/Edit/images/save.png",
+    "Cancel": "/res/Desktop/Edit/images/cancel.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Dialog"
+
+}

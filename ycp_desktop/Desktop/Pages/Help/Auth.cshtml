@@ -1,0 +1,50 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Setting_Pwd">
+    <div class="pg-nav"><div class="pg-nav-box"><div class="pg-nav-title">{{Title}}</div></div></div>
+    <div class="pg-form">
+        <table>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>产品名称</s></td>
+                <td>{{pro.Text}}</td>
+            </tr>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>产品描述</s></td>
+                <td>{{pro.Description}}</td>
+            </tr>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>绑定域名</s></td>
+                <td>{{pro.Host}}</td>
+            </tr>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>产品访问地址</s></td>
+                <td>{{pro.UrlEntrance}}</td>
+            </tr>
+            <tr>
+                <td style="width:100px;text-align:right;"><s>授权对象</s></td>
+                <td>{{info.Name}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>授权标识</s></td>
+                <td>{{info.DBSign}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>授权码</s></td>
+                <td>{{info.Code}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>授权访问地址</s></td>
+                <td>{{info.UrlEntrance}}</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><s>数据库类型</s></td>
+                <td>{{info.DBType}}</td>
+            </tr>
+        </table>
+    </div>
+</dpzp>
+

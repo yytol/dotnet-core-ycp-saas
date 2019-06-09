@@ -1,0 +1,127 @@
+﻿body {
+}
+
+.desktop-login-banner {
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    color: #222;
+    line-height: 22px;
+}
+
+.desktop-login-logo {
+    float: left;
+    width: 90px;
+    padding: 20px 0px 0px 20px;
+}
+
+    .desktop-login-logo img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #ebebeb;
+        border-radius: 3px 3px 0px 0px;
+        background-color: #f0f0f0;
+    }
+
+.desktop-login-line {
+    padding: 0px 30px 20px;
+}
+
+.desktop-login-input {
+    float: left;
+    width: calc(100% - 150px);
+}
+
+.desktop-login-user {
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+
+    .desktop-login-user input[type=text] {
+        width: 100%;
+        border: 1px solid #d7d8d9;
+        /*border-radius: 3px 3px 0px 0px;*/
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        height: 42px;
+    }
+
+        .desktop-login-user input[type=text]:focus {
+            border: 1px solid #00c1de !important;
+            background: #F7EED6;
+            box-shadow: none !important;
+        }
+
+.desktop-login-pwd {
+    width: 100%;
+    padding: 20px 0px 0px;
+}
+
+    .desktop-login-pwd input[type=password] {
+        width: 100%;
+        border: 1px solid #d7d8d9;
+        /*border-top: none;*/
+        /*border-radius: 0px 0px 3px 3px;*/
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        height: 42px;
+    }
+
+        .desktop-login-pwd input[type=password]:focus {
+            border: 1px solid #00c1de !important;
+            background: #F7EED6;
+            box-shadow: none !important;
+        }
+
+.desktop-login-link {
+    width: 100%;
+}
+
+.desktop-login-submit {
+    width: 100%;
+    padding: 20px 0px 0px;
+    overflow: visible;
+}
+
+    .desktop-login-submit a {
+        display: block;
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        background: #00c1de;
+    }
+
+        .desktop-login-submit a:hover {
+            background: #ff6a00;
+        }
+
+.desktop-login-forget {
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+
+    .desktop-login-forget a {
+        text-decoration: none;
+        color: #676767;
+        font-size: 12px;
+    }
+
+        .desktop-login-forget a:hover {
+            color: #ff6a00;
+        }
+
+.desktop-login-notice {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    color: #a00;
+    font-size: 14px;
+}

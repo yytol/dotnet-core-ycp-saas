@@ -1,0 +1,81 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop">
+    <!--工作区-->
+    <div dpz-id="Workspace" class="desktop-workspace" style="{{styleWorkspace}}"></div>
+    <!--桌面信息-->
+    <div dpz-id="Info" class="desktop-info">
+        <div class="desktop-info-rect">
+            <div class="desktop-info-content">
+                <p><i>专注SaaS&nbsp;&nbsp;专注企业云应用服务</i></p>
+                <p>现代企业最具性价比的明智选择</p>
+                <p>云应用助力企业随时随地，连接一切</p>
+                <p>专业技术研发，杜绝后顾之忧</p>
+            </div>
+            <div class="desktop-info-bottom">
+                <p>
+                    {{Desktop.Text}} 产品基于 云谊通云应用协作平台 技术构架 {{Desktop.Description}}
+                </p>
+                <p>
+                    Copyright © 2018 - {{Year}} 甘肃云谊通网络科技有限公司 版权所有
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--编辑器-->
+    <dpzp tag="div" sign="Editor" style="display: none;" class="desktop-editor">
+        <div dpz-id="Header">
+            <div dpz-id="Title">超文本编辑器</div>
+            <div dpz-id="Close"><a dpz-id="CloseLink" href="javascript:;" onclick="App.CloseEditor();">×</a></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div dpz-id="Body">
+            <dpz tag="iframe" id="Frame" src="about:blank"></dpz>
+        </div>
+    </dpzp>
+    <!--进度条-->
+    <div dpz-id="Progress" class="desktop-progress">
+        <dpzp sign="Progress">
+            <div dpz-id="Info" class="desktop-progress-info"></div>
+            <div dpz-id="Bar" class="desktop-progress-bar">
+                <div dpz-id="Block" class="desktop-progress-block"></div>
+            </div>
+        </dpzp>
+    </div>
+    <!--对话框-->
+    <div dpz-id="Dialog" class="desktop-dialog">
+        <dpzp sign="Dialog">
+            <div dpz-id="Area" class="desktop-dialog-area">
+                <div dpz-id="Box" class="desktop-dialog-box">
+                    <div dpz-id="Header" class="desktop-dialog-header">
+                        <div dpz-id="Title" class="desktop-dialog-title"></div>
+                        <div dpz-id="Close" class="desktop-dialog-close"><a dpz-id="Close_Link" href="javascript:;">X</a></div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div dpz-id="Body" class="desktop-dialog-body"></div>
+                </div>
+            </div>
+        </dpzp>
+    </div>
+    <!--延时提示-->
+    <div dpz-id="Delayed" class="desktop-delayed">
+        <div dpz-id="Delayed_Box" class="desktop-delayed-box"></div>
+    </div>
+    <!--即时提示-->
+    <div dpz-id="Tip" class="desktop-tip"></div>
+    <!--等待提示框-->
+    <div dpz-id="Wait" class="desktop-wait">
+        <dpzp sign="Wait">
+            <div class="desktop-wait-area">
+                <div class="desktop-wait-box" style="{{styleWait}}">
+                    <div dpz-id="Info" class="desktop-wait-info">正在加载</div>
+                </div>
+            </div>
+        </dpzp>
+    </div>
+</dpzp>
+

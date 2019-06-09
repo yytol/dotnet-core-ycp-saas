@@ -1,0 +1,31 @@
+﻿{
+
+  //应用名称
+  "Name": "ManageAosUserAuthorizeList",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/AosUserAuthorize/List/page.js",
+
+  //入口网页文件
+  "Page": "/AosUserAuthorize/List",
+
+  //样式文件
+  "Style": "/res/AosUserAuthorize/List/page.css",
+
+  //预加载图片列表
+  "Images": {
+    "Add": "/res/AosUserAuthorize/List/images/add.png",
+    "Edit": "/res/AosUserAuthorize/List/images/edit.png",
+    "Delete": "/res/AosUserAuthorize/List/images/delete.png",
+    "Refresh": "/res/AosUserAuthorize/List/images/refresh-b.png",
+    "Detect": "/res/AosUserAuthorize/List/images/detect.png"
+  },
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

@@ -1,0 +1,23 @@
+<table name="AosDesktops" title="桌面信息" description="桌面信息">
+  <field name="Name" title="名称">
+    <data type="string" size="50" float="0"></data>
+  </field>
+  <field name="Text" title="显示文本">
+    <data type="string" size="50" float="0"></data>
+  </field>
+  <field name="Path" title="加载地址">
+    <data type="string" size="250" float="0"></data>
+  </field>
+  <field name="Host" title="绑定主机">
+    <data type="string" size="500" float="0"></data>
+  </field>
+  <field name="UrlEntrance" title="地址入口">
+    <data type="string" size="500" float="0"></data>
+  </field>
+  <field name="ScriptEntrance" title="脚本入口">
+    <data type="string" size="500" float="0"></data>
+  </field>
+  <field name="Description" title="描述">
+    <data type="string" size="5000" float="0"></data>
+  </field>
+</table>

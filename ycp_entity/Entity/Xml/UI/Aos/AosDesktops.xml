@@ -1,0 +1,79 @@
+<table name="AosDesktops" title="桌面信息">
+  <interfaces>
+    <interface name="add" type="add" description="添加">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="edit" type="edit" description="修改">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="view" type="view" description="视图">
+      <line tag-name="div"></line>
+      <title tag-name="i"></title>
+      <content tag-name="s"></content>
+    </interface>
+    <interface name="list" type="list" description="列表">
+      <vue for="(row,index) in list" item="row" key="row.ID"></vue>
+    </interface>
+  </interfaces>
+  <fields>
+    <field name="RowIndex" title="序号">
+      <list type="html" width="60px"></list>
+    </field>
+    <field name="Name" title="名称">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form" width="150px"></add>
+      <edit type="input" save="form" width="150px" bind="Args.Name"></edit>
+      <view type="text"></view>
+      <list type="text" width="150px"></list>
+    </field>
+    <field name="Text" title="显示文本">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form" width="150px"></add>
+      <edit type="input" save="form" width="150px" bind="Args.Text"></edit>
+      <view type="text"></view>
+      <list type="text" width="150px"></list>
+    </field>
+    <field name="Path" title="加载地址">
+      <data type="string" size="250" float="0"></data>
+      <add type="none" save="none"></add>
+      <edit type="none" save="none"></edit>
+      <view type="text"></view>
+      <list type="none" width="150px"></list>
+    </field>
+    <field name="Host" title="绑定主机">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form" width="250px"></add>
+      <edit type="input" save="form" width="250px" bind="Args.Host"></edit>
+      <view type="text"></view>
+      <list type="text" width="150px"></list>
+    </field>
+    <field name="UrlEntrance" title="地址入口">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form" width="100%"></add>
+      <edit type="input" save="form" width="100%" bind="Args.UrlEntrance"></edit>
+      <view type="text"></view>
+      <list type="text" width="150px"></list>
+    </field>
+    <field name="ScriptEntrance" title="脚本入口">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form" width="100%"></add>
+      <edit type="input" save="form" width="100%" bind="Args.ScriptEntrance"></edit>
+      <view type="text"></view>
+      <list type="text" width="150px"></list>
+    </field>
+    <field name="Description" title="描述">
+      <data type="string" size="5000" float="0"></data>
+      <add type="textarea" save="form" width="100%" height="100px;"></add>
+      <edit type="textarea" save="form" width="100%" height="100px;" bind="Args.Description"></edit>
+      <view type="text"></view>
+      <list type="none" width="150px"></list>
+    </field>
+    <field name="Operate" title="操作">
+      <list type="html" width="150px"></list>
+    </field>
+  </fields>
+</table>

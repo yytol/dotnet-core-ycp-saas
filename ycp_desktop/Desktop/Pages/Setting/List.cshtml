@@ -1,0 +1,24 @@
+﻿@page
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/Desktop.cshtml";
+}
+
+<dpzp sign="Desktop_Setting_List">
+    <div class="pg-body">
+        <div class="pg-menu">
+            <div class="pg-menu-title">设置选项</div>
+            <ul v-for="menu in menus" v-bind:key="menu.id">
+                <template v-if="menu.selected==='yes'">
+                    <li><span>{{menu.title}}</span></li>
+                </template>
+                <template v-else>
+                    <li><a href="javascript:;" v-on:click="onMenu($event,menu);">{{menu.title}}</a></li>
+                </template>
+            </ul>
+        </div>
+        <div dpz-id="Content" class="pg-content">{{content}}</div>
+        <div style="clear:both;"></div>
+    </div>
+</dpzp>
+

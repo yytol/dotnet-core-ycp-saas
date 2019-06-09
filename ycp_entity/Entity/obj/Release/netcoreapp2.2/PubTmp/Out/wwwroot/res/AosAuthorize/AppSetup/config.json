@@ -1,0 +1,25 @@
+﻿{
+
+  //应用名称
+  "Name": "ManageAosAuthorizeAppSetup",
+
+  //应用描述
+  "Description": "",
+
+  //入口脚本文件
+  "Script": "/res/AosAuthorize/AppSetup/page.js",
+
+  //入口网页文件
+  "Page": "/AosAuthorize/AppSetup",
+
+  //样式文件
+  "Style": "/res/AosAuthorize/AppSetup/page.css",
+
+  //预加载图片列表
+  "Images": {},
+
+  //应用显示类型
+  "Type": "Vue",
+  "Target": "Page"
+
+}

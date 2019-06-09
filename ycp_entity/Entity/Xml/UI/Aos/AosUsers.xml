@@ -1,0 +1,86 @@
+<table name="AosUsers" title="用户信息">
+  <interfaces>
+    <interface name="add" type="add" description="添加">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="edit" type="edit" description="修改">
+      <line tag-name="div" class="dig-line"></line>
+      <title tag-name="div" class="dig-label"></title>
+      <content tag-name="div" class="dig-input"></content>
+    </interface>
+    <interface name="view" type="view" description="视图">
+      <line tag-name="div"></line>
+      <title tag-name="i"></title>
+      <content tag-name="s"></content>
+    </interface>
+    <interface name="list" type="list" description="列表">
+      <vue for="(row,index) in list" item="row" key="row.ID"></vue>
+    </interface>
+  </interfaces>
+  <fields>
+    <field name="RowIndex" title="序号">
+      <list type="html" width="60px"></list>
+    </field>
+    <field name="Name" title="用户名">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Name"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Pwd" title="密码">
+      <data type="string" size="50" float="0"></data>
+      <add type="none" save="none"></add>
+      <edit type="none" save="none" bind="Args.Pwd"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Nick" title="昵称">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Nick"></edit>
+      <view type="text"></view>
+      <list type="text" width="100px"></list>
+    </field>
+    <field name="Image" title="头像">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Image"></edit>
+      <view type="text"></view>
+      <list type="html" width="100px"></list>
+    </field>
+    <field name="Desktop" title="桌面">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Desktop"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Background" title="桌面背景">
+      <data type="string" size="500" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Background"></edit>
+      <view type="text"></view>
+      <list type="html" width="100px"></list>
+    </field>
+    <field name="Limit" title="应用操作权限">
+      <data type="string" size="50" float="0"></data>
+      <add type="input" save="form"></add>
+      <edit type="input" save="form" bind="Args.Limit"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="AuthorizeID" title="授权标识">
+      <data type="numeric" size="18" float="0"></data>
+      <add type="none" save="none"></add>
+      <edit type="none" save="none" bind="Args.AuthorizeID"></edit>
+      <view type="text"></view>
+      <list type="none" width="100px"></list>
+    </field>
+    <field name="Operate" title="操作">
+      <list type="html" width="150px"></list>
+    </field>
+  </fields>
+</table>
