@@ -1,0 +1,7 @@
+#Visual Studio 兼容配置
+.vs
+Debug
+Release
+
+#Visual Studio Code 兼容配置
+.vscode

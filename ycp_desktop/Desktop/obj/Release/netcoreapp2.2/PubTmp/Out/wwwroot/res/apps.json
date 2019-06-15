@@ -1,9 +1,0 @@
-﻿{
-  "List": [
-    {
-      "Sign": "dpz.manage.auth",
-      "Title": "授权管理",
-      "ConfigUrl": "/res/Authorization/"
-    }
-  ]
-}
