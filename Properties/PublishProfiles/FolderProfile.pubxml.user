@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>X:\Publish\Private\P19003_SaaS\Ycp_Desktop</_PublishTargetUrl>
+    <_PublishTargetUrl>X:\Publish\yytol\dotnet-core-ycp-saas\release</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="wwwroot/js/load.js">
@@ -49,10 +49,10 @@
       <publishTime>02/26/2019 22:59:30</publishTime>
     </File>
     <File Include="wwwroot/res/Desktop/Index/page.css">
-      <publishTime>05/23/2019 00:09:57</publishTime>
+      <publishTime>08/07/2019 11:42:01</publishTime>
     </File>
     <File Include="wwwroot/res/Desktop/Index/page.js">
-      <publishTime>05/23/2019 00:16:07</publishTime>
+      <publishTime>08/07/2019 11:24:33</publishTime>
     </File>
     <File Include="wwwroot/res/Desktop/Login/config.json">
       <publishTime>04/26/2019 18:50:44</publishTime>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Projects\\Private\\P19003_SaaS\\ycp_desktop\\Desktop\\Desktop.csproj": {}
+    "X:\\Projects\\yytol\\dotnet-core-ycp-saas\\Desktop.csproj": {}
   },
   "projects": {
-    "X:\\Projects\\Private\\P19003_SaaS\\ycp_desktop\\Desktop\\Desktop.csproj": {
+    "X:\\Projects\\yytol\\dotnet-core-ycp-saas\\Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Projects\\Private\\P19003_SaaS\\ycp_desktop\\Desktop\\Desktop.csproj",
+        "projectUniqueName": "X:\\Projects\\yytol\\dotnet-core-ycp-saas\\Desktop.csproj",
         "projectName": "Desktop",
-        "projectPath": "X:\\Projects\\Private\\P19003_SaaS\\ycp_desktop\\Desktop\\Desktop.csproj",
+        "projectPath": "X:\\Projects\\yytol\\dotnet-core-ycp-saas\\Desktop.csproj",
         "packagesPath": "C:\\Users\\inmou\\.nuget\\packages\\",
-        "outputPath": "X:\\Projects\\Private\\P19003_SaaS\\ycp_desktop\\Desktop\\obj\\",
+        "outputPath": "X:\\Projects\\yytol\\dotnet-core-ycp-saas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

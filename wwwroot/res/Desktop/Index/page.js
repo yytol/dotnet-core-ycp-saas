@@ -304,7 +304,7 @@ app.ready(function () {
                     cfg.height = 350;
                     cfg.style = {
                         left: "unset",
-                        right: "300px",
+                        right: "15%",
                         marginLeft: "0px",
                         boxShadow: "none",
                         backgroundColor: "#fff",
